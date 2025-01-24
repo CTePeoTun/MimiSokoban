@@ -1,3 +1,4 @@
+using MimiSokoban.Application;
 using Zenject;
 
 namespace MimiSokoban
@@ -7,6 +8,8 @@ namespace MimiSokoban
         public override void InstallBindings()
         {
             Container.Bind<CoroutineRunner>().FromNewComponentOnNewGameObject().AsSingle();
+            
+            Container.Install<ApplicationInstaller>();
         }
     }
 }
