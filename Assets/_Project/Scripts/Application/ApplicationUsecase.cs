@@ -2,7 +2,7 @@ using Zenject;
 
 namespace MimiSokoban.Application
 {
-    public class ApplicationPresenter
+    public class ApplicationUsecase
     {
         [Inject] private readonly ApplicationStateMachine applicationStateMachine;
 

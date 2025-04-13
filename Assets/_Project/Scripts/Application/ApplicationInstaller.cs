@@ -8,10 +8,10 @@ namespace MimiSokoban.Application
         {
             Container.BindInterfacesAndSelfTo<ApplicationStateMachine>().AsSingle();
             Container.Bind<EntryState>().AsSingle();
-            Container.Bind<EntrySubState>().To<ExampleEntryState>().AsSingle();
+            Container.Bind<EntrySubState>().To<ExampleEntrySubState>().AsSingle();
             Container.Bind<LobbyState>().AsSingle();
             Container.Bind<PlayroomState>().AsSingle();
-            Container.Bind<ApplicationPresenter>().AsSingle();
+            Container.Bind<ApplicationUsecase>().AsSingle();
         }
     }
 }
