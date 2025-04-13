@@ -1,4 +1,5 @@
 using MimiSokoban.Application;
+using MimiSokoban.SceneLoader;
 using Zenject;
 
 namespace MimiSokoban
@@ -10,6 +11,7 @@ namespace MimiSokoban
             Container.Bind<CoroutineRunner>().FromNewComponentOnNewGameObject().AsSingle();
             
             Container.Install<ApplicationInstaller>();
+            Container.Install<SceneLoaderInstaller>();
         }
     }
 }

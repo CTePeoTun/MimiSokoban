@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MimiSokoban.Application
 {
-    public class ExampleEntryState : EntrySubState
+    public class ExampleEntrySubState : EntrySubState
     {
         protected override void OnEnterSubState()
         {
