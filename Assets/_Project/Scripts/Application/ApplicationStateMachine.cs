@@ -6,7 +6,7 @@ namespace MimiSokoban.Application
 {
     public class ApplicationStateMachine : StateMachine<ApplicationStateId, ApplicationTriggerTransitionId>, IInitializable
     {
-        public ApplicationStateMachine(EntryState entryState, LobbyState lobbyState, PlayroomState playroomState)
+        public ApplicationStateMachine(EntryState entryState, LobbyState lobbyState, PlayRoomState playRoomState)
         {
             SetStartState(ApplicationStateId.Entry);
             
@@ -22,7 +22,7 @@ namespace MimiSokoban.Application
                 ApplicationStateId.Lobby,
                 ApplicationStateId.Playroom);
             
-            AddState(ApplicationStateId.Playroom, playroomState);
+            AddState(ApplicationStateId.Playroom, playRoomState);
             this.AddTransition(ApplicationStateId.Playroom, ApplicationStateId.Lobby);
             this.AddTriggerTransition(ApplicationTriggerTransitionId.ToLobby,
                 ApplicationStateId.Playroom,

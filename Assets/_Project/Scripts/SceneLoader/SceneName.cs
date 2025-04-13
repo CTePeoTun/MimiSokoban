@@ -4,6 +4,6 @@ namespace MimiSokoban.SceneLoader
     {
         public const string Entry = "Entry";
         public const string Lobby = "Lobby";
-        public const string Game = "Game";
+        public const string PlayRoom = "PlayRoom";
     }
 }

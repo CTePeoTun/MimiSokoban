@@ -10,7 +10,7 @@ namespace MimiSokoban.Application
             Container.Bind<EntryState>().AsSingle();
             Container.Bind<EntrySubState>().To<ExampleEntrySubState>().AsSingle();
             Container.Bind<LobbyState>().AsSingle();
-            Container.Bind<PlayroomState>().AsSingle();
+            Container.Bind<PlayRoomState>().AsSingle();
             Container.Bind<ApplicationUsecase>().AsSingle();
         }
     }
